@@ -1,0 +1,41 @@
+#include<iostream.h>
+void main()
+{
+int x,y,z;
+cout<<"please input x:"<<endl;
+cin>>x;
+if（0<=x&&x<=99）
+  y=x/10；
+else
+  z=x/100；
+switch(y)
+{
+case 0:cout<<x<<":小于10\n";break
+default:cout<<x<<":10～99\n"
+}
+switch（z）
+{
+case 0:cout<<x<<":100～999\n";break
+default:cout<<x<<":1000以上\n";
+}
+}
+
+
+#include<iostream.h>
+void main()
+{
+int x;
+char c;
+cout<<"please input x:"<<endl;
+cin>>x;
+if(x＜10)
+  c=(小于10);
+else
+  if(10＜=x&&x<=99)
+    c=(10~99);
+  else
+    if(100<=x&&x<=999)
+      c=(100~999);
+     else
+       c=1000以上;
+cout<<x<<c<<endl
