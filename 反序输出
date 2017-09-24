@@ -1,0 +1,13 @@
+#include<iostream.h>
+void main()
+{
+int x;
+cout<<"please input x:"<<endl;
+cin>>x;
+do
+{
+x=x%10
+cout<<x
+}while((x=x/10)!=0);
+cout<<endl;
+}
