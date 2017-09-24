@@ -1,0 +1,20 @@
+#include<iostream.h>
+void main()
+{
+int x,y;
+y=0
+cout<<"please input x:"<<endl;
+cin>>x;
+while(x!=0)
+{
+x=x/10
+y=y+1
+}
+switch(y)
+{
+case 1:cout<<x<<":小于10\n";break
+case 2:cout<<x<<":10～99\n";break
+case :3:cout<<x<<":100～999\n";break
+default:cout<<x<<":1000以上\";
+}
+}
