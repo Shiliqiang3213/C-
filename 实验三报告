@@ -1,0 +1,33 @@
+实验三  顺序结构程序设计
+  一：目的要求
+1.熟悉I/O流
+2.进一步熟悉c语言的基本语句
+3.熟悉顺序结构程序中语句的执行过程
+4.能设计简单的顺序结构程序
+
+  二：实验步骤
+1:和实验一一样，在d盘建立一个以自己学号为名的文件夹，用来存放所建立的文件
+2：启动visual c++软件，新建一个工程名称win32console application，选定位置为上一步所建立的文件夹里面
+3:新建文件，把建立的文件放在上一步的工程中
+4:通过键盘输入是实验书中的程序内容 
+  例如上机题一：
+ #include<iostream.h>
+ #include>iomanip.h>
+void main()
+{
+  int num1,num2,num3;
+  float average;
+  cout<<"please input three numbers:";
+  cin>>num1>>num2>>num3;
+  average=(num1+num2+num3)/3.0;
+  cout<<setiosflags(ios::fixed)<<setprecision(2)<<average<<endl"
+ }
+ 按shift+f5进行执行程序，看是否和实验课本中的答案一致
+对于其他的实验题也是如上机题一一样，先输入程序，然后检查程序没有问题以后再运行程序。
+
+三:实验小结  
+1.在输入数据时，如果有多个整形或实型数据要输入，两个数据之间以一个空格或者多个空格间隔，也可以用enter键或者tab键间隔
+2.如果要输出字符型变量的ASCII值，要在输出前进行强制类型转换
+3.默认时，I/O流左对齐字符串，右对齐数值，用setiosflags(ios::right)和setiosflags(ios::left)标志，可以控制输出对齐方式。
+4.默认时，I/O流仅在负数之前显示值的符号，根据程序用途，有时也许Xbox在正数之前加上正号，可以用setiosflags(ios::showpos)标志
+5.在涉及一个交换变量值的问题时候，普遍的方法是借助中间变量，用以保存即将要被修改的值使之不被覆盖
