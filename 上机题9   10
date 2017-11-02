@@ -1,0 +1,59 @@
+上机 9
+
+#include<iostream.h>
+int fun(int m)
+{
+int n=0;
+int i;
+for(i=1;i<=m;i++)
+{
+if(i%7==0||i%11==0)
+n=n+1;
+}
+return(n);
+void main()
+{
+int m;
+int n;
+int fun(int m);
+cin>>m;
+n=fun(m);
+cout<<n<<endl;
+}
+
+
+
+
+
+
+ 
+上机 10
+
+#include<iostream.h>
+float fun(double h)
+{
+int x,i;
+double t;
+i=1000*h;
+x=i%10;
+if(x>=5)
+{
+i=i+10-x;
+}
+else
+{
+i=i-x;
+}
+t=i/1000;
+return(t);
+}
+void main()
+{
+double y;
+double h;
+float fun(double h)
+cin>>h;
+y=fun(h);
+cout<<y<<endl;
+}
+
