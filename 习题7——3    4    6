@@ -34,13 +34,12 @@ cout<<a[i];
 4
 #include<iostream.h>
 #include<iomanip.h>
-define N 10
 void main()
 {
-int a[N];
-int t,*p,*q;
+int a[10];
+int i,t,*p,*q;
 cout<<"请输入10个数:";
-for(i=0;i<N;i++)
+for(i=0;i<10;i++)
 cin>>a[i];
 p=a;
 q=&a[9];
@@ -53,8 +52,9 @@ p++;
 q--;
 }
 cout<<"反序输出为:";
-for(i=0;i<N;i++)
-cout<<a[i]<<endl;
+for(i=0;i<10;i++)
+cout<<setw(3)<<a[i];
+cout<<endl;
 }
 
 
